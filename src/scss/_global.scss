@@ -1,0 +1,120 @@
+// 
+// Global theme styling
+// 
+
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+// 
+// https://caniuse.com/?search=scroll-padding
+
+html {
+    scroll-padding-top: 4.5rem;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+// Adjust the line height of paragraphs
+
+p {
+    line-height: $line-height-lg;
+}
+
+// Spacing and heading styling for page sections
+
+.page-section {
+    padding: 6rem 0;
+
+    h2.section-heading {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    h3.section-subheading {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+        font-family: $subheadings-font-family;
+        margin-bottom: 4rem;
+    }
+}
+
+.countdown_timer {
+    padding: 0 15px;
+    box-sizing:border-box;
+    margin: 0;
+    border-color:rgb(51, 51, 51);
+    border-width:0;
+    border-style:none;
+}
+
+.fcountdown-timer {
+    text-align:center;
+    font-size:60px;
+    color: rgb(255,255,255);
+}
+
+.countdown_timer .fcountdown-timer {
+    color: rgb(255,255,255);
+    font-size:25px;
+    font-family: 'Open Sans', monospace;
+    font-weight:700;
+}
+
+.mt-module {
+    box-sizing:border-box;
+}
+
+.mt-module > .mt-element {
+    text-align:center;
+    position:relative;
+}
+
+.mt-row .mt-module {
+    position: relative;
+    box-sizing:content-box;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+    background-position: center;
+}
+
+.mt-module .fcountdown-timer {
+    width: auto;
+    display: inline-block;
+}
+
+.carousel-inner img {
+    height: 300px;
+
+  }
+
+.carousel-caption {
+position: relative;
+left: auto;
+right: auto;
+}
+
+.accordion {
+    padding: 11px;
+}
+
+.accordion-body {
+    text-align:left;
+}
+
+.tracks-body {
+    text-align:justify;
+}
+
+// Increase the padding on sections when screen size is greater
+// than the medium breakpoint (set by Bootstrap)
+
+@include media-breakpoint-up(md) {
+    section {
+        padding: 9rem 0;
+    }
+}

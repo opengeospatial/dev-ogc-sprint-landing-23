@@ -1,0 +1,32 @@
+//
+// Styles
+//
+
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+//@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Global CSS
+@import "./global.scss";
+
+// Components
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
+//@import "./components/carousel.scss";
+
+// Sections
+@import "./sections/about.scss";
+@import "./sections/masthead.scss";
+@import "./sections/portfolio.scss";
+@import "./sections/timeline.scss";
+@import "./sections/team.scss";
+@import "./sections/contact.scss";
+@import "./sections/footer.scss";
+
+
+//@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.cs');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
